@@ -1,0 +1,49 @@
+#hadoop
+1. hdfs
+文件存储系统
+
+namenode
+datanode
+yarn
+
+checkpoint
+存储大量非结构化和半结构化的数据
+
+2. mapreduce
+并行计算
+完成索引
+
+
+#hive相关
+数据仓库
+
+#spark相关
+scala
+利用内存加快mapreduce
+更好的适用于需要迭代的mapreduce
+
+#数据仓库相关
+
+ods 当前加载的数据和历史已经处理过的数据
+
+pdw 清洗后的数据
+
+dm 集市层 轻度汇总
+
+app 应用层 高度汇总
+
+#卡夫卡
+处理消息队列
+
+#业务块
+1数据仓库的构建
+2data pipeline
+3数据批量分析
+
+#金融数据的特性
+多维度
+实时性高
+政策影响
+各种系统的数据流
+
+python如何释放变量
