@@ -1,6 +1,4 @@
 import copy
-
-
 def fun1(num, b):
     global ans
     if num == 2 * n - 1:
