@@ -1,4 +1,4 @@
-a='[1,2]'
+a='[1,2],[2,3],[3,4],[4,5],[5,3]'
 #
 class node:
     def __init__(self,v):
@@ -8,7 +8,6 @@ class node:
 a=a.split(',')
 # print(a)
 ans=[]
-
 for i in a:
     tmp=''
     for j in i:

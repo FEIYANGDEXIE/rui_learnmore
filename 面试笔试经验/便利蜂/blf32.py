@@ -1,5 +1,5 @@
 a='330,450,630,690,750,780,990,1050'
-#
+#递归求解
 def backtrack(num,assign):
     lab=0
     for i in range(num,len(assign),2):

@@ -2,6 +2,7 @@ a='3,6,5,1,8'
 #
 
 def backtrack(a,b):
+    #可以建一个二维数组记录值，不重复计算
     if str(a) + '-' + str(b) in d:
         return d[str(a) + '-' + str(b)]
     # print(a,b)
@@ -10,7 +11,7 @@ def backtrack(a,b):
         return sum(data[a:b+1])//3
     else:
         if a==b:
-            d[str(a) + '-' + str(b)] = sum(data[a:b + 1]) // 3
+            d[str(a) + '-' + str(b)] = 0
             return 0
         else:
             tmp=0
