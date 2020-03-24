@@ -18,28 +18,20 @@ def p(s,num):
                     bt(n+1,l_a)
     bt(0,[])
     print(res)
+
 def c(s,num):
     res=[]
-    def bt(n,assign):
+    def bt(n,n2,assign):
         # print(n,assign)
         if n==num:
             res.append(assign[:])
         elif n<num:
-
-            for i in s:
+            for i in range(n2,len(s)):
                 l_a = assign.copy()
-                if len(assign)!=0:
-                    if i>assign[-1]:
-                        l_a.append(i)
-                        bt(n+1,l_a)
-                else:
-                    l_a.append(i)
-                    bt(n+1,l_a)
 
-
-
-
-    bt(0,[])
+                l_a.append(s[i])
+                bt(n+1,i+1,l_a)
+    bt(0,0,[])
     print(res)
 
     #组合
