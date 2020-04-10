@@ -13,7 +13,8 @@ class Solution2:
 class Solution:
 
     def get_ipv4_nums(self, s):
-        #¸üÏñbfs
+
+        #bfs
         def dfs(s, segment, res, ip):
             if segment == 4:
                 if s == '':
